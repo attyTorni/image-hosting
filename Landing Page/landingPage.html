@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilocos Sur Polytechnic State College - Tagudin Campus</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: maroon;
+            padding: 20px 0;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            max-height: 60px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+        }
+
+        .nav-links a:hover {
+            background-color: yellow;
+            color: maroon;
+        }
+
+        .btn-apply {
+            background-color: yellow;
+            color: maroon;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-apply:hover {
+            background-color: white;
+            color: maroon;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background: url('3-Story Building-LHS.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-content {
+            max-width: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero-content h2 {
+            font-size: 36px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .btn-explore {
+            background-color: yellow;
+            color: maroon;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-explore:hover {
+            background-color: white;
+            color: maroon;
+        }
+
+      /* Programs Section */
+.programs-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.programs-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-card {
+    flex: 0 0 30%;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Fixed height */
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.program-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 150px; /* Set height for images */
+    object-fit: cover; /* Ensure images cover the space */
+}
+
+.program-card h4 {
+    margin-top: 10px;
+    color: maroon;
+    font-size: 18px;
+}
+
+.program-card p {
+    color: #666;
+    font-size: 16px;
+}
+
+        /* About Section */
+        .about-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: white;
+            color: #333;
+        }
+
+        .about-section h3 {
+            color: maroon;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .contact-section button {
+            background-color: maroon;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .contact-section button:hover {
+            background-color: yellow;
+            color: maroon;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            position: relative;
+            height: 50vh;
+            background: url('images/quote-background.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .quote-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .quote-content p {
+            font-size: 24px;
+            font-style: italic;
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ispsc.png" alt="ISPSC Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#apply" class="btn-apply">Apply Now</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Welcome to Ilocos Sur Polytechnic State College - Tagudin Campus</h2>
+            <p>Your future starts here. Explore our programs and apply today!</p><br>
+            <a href="#programs" class="btn-explore">Explore Programs</a>
+        </div>
+    </section>
+
+    <section id="programs" class="programs-section">
+        <h3>Our Programs</h3>
+        <div class="programs-container">
+            <div class="program-card">
+                <img src="math.jpg" alt="Math Program">
+                <h4>Bachelor of Science in Mathematics</h4>
+                <p>Learn the skills needed to innovate and lead in the field of Mathematics.</p>
+            </div>
+            <div class="program-card">
+                <img src="it.jpg" alt="IT Program">
+                <h4>Bachelor of Science in Information Technology</h4>
+                <p>Develop cutting-edge solutions in the tech world.</p>
+            </div>
+            <div class="program-card">
+                <img src="b.jpg" alt="Business Program">
+                <h4>Bachelor of Science in Business Administration</h4>
+                <p>Equip yourself with the knowledge to succeed in the business industry.</p>
+            </div>
+            <div class="program-card">
+                <img src="s.jpg" alt="Social Science">
+                <h4>Bachelor of Arts in Social Science</h4>
+                <p>Fosters your deeper appreciation of cultural diversity and trains you to do anthropological research.</p>
+            </div>
+            <div class="program-card">
+                <img src="e.jpg" alt="Education Program">
+                <h4>Bachelor of Secondary Education</h4>
+                <p>Become a passionate educator and shape the future of learning.</p>
+            </div>
+            <div class="program-card">
+                <img src="p.jpg" alt="Psychology Program">
+                <h4>Bachelor of Arts in Psychology</h4>
+                <p>You will learn all about the diversity of human experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="admissions-section">
+        <h3>Admissions</h3>
+        <p>Join us and be part of a vibrant academic community. Start your journey by applying to our programs.</p>
+        <a href="#apply" class="btn-apply">Apply Now</a>
+    </section>
+
+    <section id="about" class="about-section">
+        <h3>About Us</h3>
+        <p>Ilocos Sur Polytechnic State College - Tagudin Campus is committed to providing quality education that fosters academic excellence and prepares students for successful careers.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="quote-section">
+        <div class="quote-content">
+            <p>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ilocos Sur Polytechnic State College - Tagudin Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
